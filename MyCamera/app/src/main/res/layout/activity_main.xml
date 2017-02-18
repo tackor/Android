@@ -4,14 +4,69 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.tacker.mycamera.MainActivity">
 
+    <!--拍照,并将照片贴在ImageView上-->
     <TextView
+        android:id="@+id/activity_takePhoto_toImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="#00f"
+        android:textSize="30dp"
+        android:text="立即显示图片" />
+
+    <!--拍照,并将照片保存到相册-->
+    <TextView
+        android:id="@+id/activity_takePhoto_toSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/activity_takePhoto_toImageView"
+        android:layout_marginTop="30dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="#00f"
+        android:textSize="30dp"
+        android:text="拍照并保存" />
+
+    <!--简单的摄像-->
+    <TextView
+        android:id="@+id/activity_takeVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/activity_takePhoto_toSave"
+        android:layout_marginTop="30dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="#00f"
+        android:textSize="30dp"
+        android:text="简单摄像" />
+
+    <!--相机高级-->
+    <TextView
+        android:id="@+id/activity_super_Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/activity_takeVideo"
+        android:layout_marginTop="30dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="#00f"
+        android:textSize="30dp"
+        android:text="高级相机" />
+
 </RelativeLayout>

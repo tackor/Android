@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tacker.mycamera">
 
+    <users-feature android:name="android.hardware.camera2"
+                   android:required="true" />
+    <users-feature android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <users-feature android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ShowImageActivity" />
+        <activity android:name=".SaveImageActivity" />
+        <activity android:name=".SimpVideoActivity" />
+        <activity android:name=".SuperCameraActivity" />
     </application>
 
 </manifest>
