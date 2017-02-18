@@ -11,7 +11,50 @@
     tools:context="com.example.tacker.myapplication.MainActivity">
 
     <TextView
+        android:id="@+id/main_text_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="50dp"
+        android:textSize="50sp"
+        android:text="\ue900"/>
+
+    <TextView
+        android:id="@+id/main_text_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/main_text_01"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="50sp"
+        android:textColor="#f00"
+        android:text="\ue900"/>
+
+    <TextView
+        android:id="@+id/main_text_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/main_text_02"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:contentDescription="家"
+        android:textSize="80sp"
+        android:textColor="#0ff"
+        android:text="\ue900"/>
+
+    <ImageView
+        android:id="@+id/main_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/main_text_01"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/main_text_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/main_img"
+        android:drawableLeft="@mipmap/ic_launcher"/>
+
 </RelativeLayout>
